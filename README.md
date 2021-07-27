@@ -5,7 +5,9 @@ portifólio do desenvolvedor
 O controle das tarefas desse projeto será realizado no GitHub
 
 ## Ícones
-nova fucionalidade
-atualização
-correção de beg
-release
+<ul>
+    <li>nova fucionalidade</li>
+    <li>atualização</li>
+    <li>correção de beg</li>
+    <li>release</li>
+</ul>
