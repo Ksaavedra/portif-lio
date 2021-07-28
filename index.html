@@ -25,7 +25,7 @@
             <div class="banner">
                 <h1>Web Developer & Front End Designer</h1>
                 <p>Kelly Michele T S dos Santos</p>
-                <button>Saiba mais</button>
+                <button class="btn">Saiba mais</button>
             </div>
         </header>
 
@@ -33,9 +33,9 @@
             <nav>
                 <ul class="menu">
                     <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Conhecimentos</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Projetos</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Contato</a></li>
+                    <li class="menu-item"><a href="#conhecimentos" class="menu-link">Conhecimentos</a></li>
+                    <li class="menu-item"><a href="#projetos" class="menu-link">Projetos</a></li>
+                    <li class="menu-item"><a href="#contato" class="menu-link">Contato</a></li>
                 </ul>
             </nav>
             <div class="social-media">
@@ -46,7 +46,7 @@
         </aside>
         
         <!--section.sessao-conhecimentos>(.sessao-header>h1)+.conhecimentos>(.conhecimento>(.conhecimento-header>i.fab+h3).conhecimento-text>p{lorem30})*6-->
-        <section class="sessao-conhecimentos">
+        <section class="sessao-conhecimentos" id="conhecimentos">
             <div class="sessao-header">
                 <h1>Conhecimentos</h1>
             </div>
@@ -110,6 +110,96 @@
                 </div>
             </div>
         </section>
+
+        <section class="sessao-projetos" id="projetos">
+            <div class="sessao-header">
+                <h1>Projetos</h1>
+            </div>
+
+            <!--.projetos>.card>(.card-img-wrapper+.card-info>h2+h3+p+button)*3-->
+            <div class="projetos">
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="./imagens/proj1.jpg" alt="Aclapps">
+                    </div>
+                    <div class="card-info">
+                        <h2>Aclapps TI</h2>
+                        <h3>HTML, PHP, Laravel Framework, Wordpress, Angular2+, JavaScript, Integrações SOAP e REST, MySql</h3>
+                        <p>Desenvolvimento de sites e hotsites de clientes por demanda. Desenvolvimento de páginas corporativas, manutenção de sistemas de ecommerce, desenvolvimento de novas features. Aplicação de temas e plugins.</p>
+                        <button class="btn">Saiba mais</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="./imagens/proj2.jpg" alt="Casa da Essencias">
+                    </div>
+                    <div class="card-info">
+                        <h2>Casa da Essencias</h2>
+                        <h3>PHP, Angular e MySQL</h3>
+                        <p>Responsável pela análise e desenvolvimento de novas ferramentas, ajustes e melhorias na plataforma atual do e-commerce desenvolvido com PHP, Angular e MySQL que possui integrações com a Cielo, Sistema de Transportadora Jamef e Correios.
+                        Monitoração do desenvolvimento de funcionalidades da nova plataforma e-commerce, verificando se todas as funcionalidades da plataforma atual estão sendo desenvolvidas na nova plataforma.
+                        Realização de testes de comportamento entre as plataformas.
+                        Execução do plano de implantação da nova plataforma.</p>
+                        <button class="btn">Saiba mais</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="./imagens/proj3.JPG" alt="Garçom Digital">
+                    </div> 
+                    <div class="card-info">
+                        <h2>Garçom Digital</h2>
+                        <h3>AngularJS, Html, Bootstrap, FontAwesome, CSS, MongoDB, GraphQL, REST.</h3>
+                        <p>Desenvolvimento de sistemas de cardápio digital, onde o cliente instala o aplicativo e escanea o QRCode disponibilizado na mesa, tem acesso aos valores, cardápios, itens, pode criar o pedido, chamar o garçom, pedir a conta, adicionar mais itens no pedido, etc.
+                        Realizei o desenvolvimento do novo site da empresa em HTML, Javascript, CSS e Bootstrap.
+                        No sistema eu trabalho no frontend, no módulo de acompanhamento do pedido, mesas ocupadas, mesas livres, impressão de Cardápios, impressão de QRCode, impressão de contas, impressão de pedidos, fechamento de contas, fechamento de pedidos.</p>
+                        <button class="btn">Saiba mais</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sessao-contato" id="contato">
+            <div class="contato-wrapper">
+                <div class="contato-left"></div>
+                <div class="contato-right">
+                    <h1>Contato</h1>
+                    <form>
+                        <div class="input-group">
+                            <input type="text" class="field" id="nome">
+                            <label for="nome" class="field-label">Nome</label>
+                        </div>
+
+                        <div class="input-group">
+                            <input type="email" class="field" id="email">
+                            <label for="email" class="field-label">E-mail</label>
+                        </div>
+
+                        <div class="input-group">
+                            <textarea class="field" name="" id="mensagem" cols="30" rows="10"></textarea>                            
+                            <label for="mensagem" class="field-label">Mensagem</label>
+                        </div>
+                        <button type="submit" class="btn btn-submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <p>Copyright 1copy; 2021, ETECIA DS - Todos os direitos reservados</p>
+                <div class="social-list">
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-github-alt"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <a href="#home" id="link-topo">
+            <i class="fas fa-arrow-up"></i>
+        </a>
     </div>
 </body>
 <script src="script.js"></script>
